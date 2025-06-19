@@ -1,5 +1,7 @@
 # Loan Approval Prediction App
 
+Link to App: https://loh-0-loan-approval-prediction-streamlit-app-dsy9mv.streamlit.app/
+
 This project is a **machine learning-powered web application** that predicts whether a loan will be approved based on user inputs such as income, employment status, credit score, and asset values. The app also uses **SHAP (SHapley Additive exPlanations)** to explain how each input feature contributed to the model's decision.
 
 Built with:
