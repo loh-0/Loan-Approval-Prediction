@@ -1,30 +1,30 @@
-# 🏦 Loan Approval Prediction App
+# Loan Approval Prediction App
 
 This project is a **machine learning-powered web application** that predicts whether a loan will be approved based on user inputs such as income, employment status, credit score, and asset values. The app also uses **SHAP (SHapley Additive exPlanations)** to explain how each input feature contributed to the model's decision.
 
 Built with:
-- 🎯 **Random Forest Classifier**
-- 🧠 **SHAP for model explainability**
-- 💻 **Streamlit** for the interactive user interface
+- **Random Forest Classifier**
+- **SHAP for model explainability**
+- **Streamlit** for the interactive user interface
 
 ---
 
-## 🚀 Features
+## Features
 
-- 🔮 **Real-time loan approval prediction** based on financial and personal attributes
-- 🧩 **SHAP visualizations** (force plot, waterfall, bar plot) to interpret why a loan was approved or rejected
-- 🔁 **What-If simulator** to see how changing certain inputs like CIBIL score or income might impact outcomes
-- 📊 **Interactive summary** of how each input feature affected the model's decision
-- 📋 **Rule-based recommendations** for improving loan approval chances
-- 🎯 **Priority action items** highlighting the most impactful areas for improvement
+- **Real-time loan approval prediction** based on financial and personal attributes
+- **SHAP visualizations** (force plot, waterfall, bar plot) to interpret why a loan was approved or rejected
+- **What-If simulator** to see how changing certain inputs like CIBIL score or income might impact outcomes
+- **Interactive summary** of how each input feature affected the model's decision
+- **Rule-based recommendations** for improving loan approval chances
+- **Priority action items** highlighting the most impactful areas for improvement
 
 ---
 
-## ⚠️ Important Data Limitations
+## Important Data Limitations
 
 **This is a proof-of-concept project with significant data limitations that users should understand:**
 
-### 🎯 Feature Dominance Issue
+### Feature Dominance Issue
 - The dataset exhibits **extreme correlation** with **CIBIL score** and **loan term** - these two features essentially determine 90%+ of predictions
 - Other features like:
   - Asset values (residential, commercial, luxury, bank)
@@ -35,12 +35,12 @@ Built with:
   
   Have **minimal predictive power** due to poor data quality or weak correlations in the training dataset.
 
-### 📊 What This Means
+### What This Means
 - **Unrealistic scenarios**: You might see cases where someone with excellent income and assets gets rejected solely due to CIBIL score
 - **Limited feature diversity**: The model essentially becomes a "CIBIL score + loan term" predictor
 - **Oversimplified decisions**: Real-world loan decisions consider many more nuanced factors
 
-### 🧪 Why This Happened
+### Why This Happened
 This is a common issue in ML projects with:
 - **Synthetic or limited datasets** that don't capture real-world complexity
 - **Feature engineering challenges** where some features weren't properly scaled or encoded
@@ -50,7 +50,7 @@ This is a common issue in ML projects with:
 
 ---
 
-## 🔧 Technical Stack
+## Technical Stack
 
 ### Machine Learning
 - **scikit-learn**: Random Forest Classifier
@@ -65,7 +65,7 @@ This is a common issue in ML projects with:
 
 ---
 
-## 📈 Model Performance Notes
+## Model Performance Notes
 
 While the model achieves reasonable accuracy metrics on the training/test data, the **real-world applicability is limited** due to:
 
@@ -80,30 +80,30 @@ While the model achieves reasonable accuracy metrics on the training/test data, 
 
 ---
 
-## 🎓 Learning Outcomes
+## Learning Outcomes
 
 This project demonstrates:
 
 ### Technical Skills
-- ✅ **End-to-end ML pipeline**: Data processing → Model training → Deployment
-- ✅ **Model interpretability**: Using SHAP for explainable AI
-- ✅ **Web deployment**: Creating interactive ML applications with Streamlit
-- ✅ **Feature engineering**: Working with mixed data types (numerical, categorical)
+- **End-to-end ML pipeline**: Data processing → Model training → Deployment
+- **Model interpretability**: Using SHAP for explainable AI
+- **Web deployment**: Creating interactive ML applications with Streamlit
+- **Feature engineering**: Working with mixed data types (numerical, categorical)
 
 ### ML Concepts
-- ✅ **Tree-based models**: Random Forest implementation and tuning
-- ✅ **Model explanation**: Understanding how features contribute to predictions
-- ✅ **Real-world challenges**: Dealing with imbalanced/correlated features
-- ✅ **User experience**: Making ML accessible through intuitive interfaces
+- **Tree-based models**: Random Forest implementation and tuning
+- **Model explanation**: Understanding how features contribute to predictions
+- **Real-world challenges**: Dealing with imbalanced/correlated features
+- **User experience**: Making ML accessible through intuitive interfaces
 
 ### Data Science Reality
-- ⚠️ **Data quality matters**: Poor data leads to limited model utility
-- ⚠️ **Feature correlation**: How dominant features can overshadow others
-- ⚠️ **Model limitations**: When to acknowledge and communicate model weaknesses
+- **Data quality matters**: Poor data leads to limited model utility
+- **Feature correlation**: How dominant features can overshadow others
+- ⚠**Model limitations**: When to acknowledge and communicate model weaknesses
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
 To make this a more realistic loan prediction system:
 
