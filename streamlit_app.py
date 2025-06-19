@@ -6,7 +6,6 @@ import shap
 import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit.components.v1 as components
-import openai
 from typing import Dict, List, Tuple
 
 # --- Load model and explainer ---
